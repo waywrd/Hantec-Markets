@@ -1,7 +1,8 @@
-import { createRouter, createMemoryHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/HomeView.vue";
 import Triangle from "../views/TriangleView.vue";
 import Square from "../views/SquareView.vue";
+import TriangleSquare from "../views/TriangleSquare.vue";
 
 const routes = [
   {
@@ -16,10 +17,14 @@ const routes = [
     path: "/square",
     component: Square,
   },
+  {
+    path: "/triangle-square",
+    component: TriangleSquare,
+  },
 ];
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes,
 });
 export default router;
