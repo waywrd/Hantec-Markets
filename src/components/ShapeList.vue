@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center mt-8">
-    <div class="flex flex-wrap justify-start w-11/12">
+    <div class="flex flex-wrap sm:justify-start justify-center w-11/12">
       <div
         v-for="([key, value], index) in Object.entries(shapes)"
         :key="key">
