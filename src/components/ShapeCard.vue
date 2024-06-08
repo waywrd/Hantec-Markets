@@ -2,10 +2,10 @@
   <div
     @click="activeIndex = index"
     :class="[
-      index === activeIndex ? 'border-sky-500 border-2' : '',
-      'rounded-lg shadow-md p-4 hover:shadow-lg bg-white w-56 m-5 h-48',
+      index === activeIndex ? 'border-sky-300 border-2 shadow-none' : '',
+      'rounded-lg shadow-md p-4 hover:shadow-lg  bg-white w-56 m-5 h-48 cursor-pointer',
     ]">
-    <h2 class="card-title">{{ shapeTitle }}</h2>
+    <h2 class="mb-2 text-lg">{{ shapeTitle }}</h2>
     <div class="flex justify-center items-center">
       <div :style="shapeStyle"></div>
     </div>

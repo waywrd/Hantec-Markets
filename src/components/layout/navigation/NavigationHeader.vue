@@ -4,7 +4,7 @@
       <div class="text-white pl-3 text-xl">All shapes</div>
     </RouterLink>
     <RouterLink to="/triangle">
-      <div class="text-white pl-3 text-xl">Triangle</div>
+      <div class="text-white text-xl">Triangle</div>
     </RouterLink>
     <RouterLink to="/square">
       <div class="text-white text-xl">Square</div>
