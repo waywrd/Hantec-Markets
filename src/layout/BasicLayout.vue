@@ -1,7 +1,13 @@
 <template>
   <div class="w-full h-screen">
-    <NavigationHeader />
-    <div class="w-full h-full flex justify-center"><slot></slot></div>
+    <nav>
+      <NavigationHeader />
+    </nav>
+    <div class="w-full h-full flex justify-center">
+      <body>
+        <slot></slot>
+      </body>
+    </div>
   </div>
 </template>
 <script setup>
