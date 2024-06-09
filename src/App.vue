@@ -4,5 +4,5 @@
   </BasicLayout>
 </template>
 <script setup>
-import BasicLayout from "./components/layout/BasicLayout.vue";
+import BasicLayout from "./layout/BasicLayout.vue";
 </script>
