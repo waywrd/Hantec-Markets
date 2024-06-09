@@ -10,5 +10,5 @@
 </template>
 
 <script setup>
-import ShapeList from "../components/ShapeList.vue";
+import ShapeList from "../components/Home/ShapeList.vue";
 </script>

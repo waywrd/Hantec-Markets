@@ -14,7 +14,7 @@
 </template>
 <script setup>
 import { ref, onMounted } from "vue";
-import shapes from "../utils/Shapes.js";
+import shapes from "../../utils/Shapes.js";
 import ShapeCard from "./ShapeCard.vue";
 
 const activeIndex = ref(false);
