@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-col w-full mb-1">
+  <div class="flex flex-col w-full">
     <div class="text-4xl mt-12 self-center">Square</div>
     <div class="square self-center mt-8"></div>
     <div class="sm:w-9/12 w-screen">
-      <div class="text-xl mt-6 pl-4">
+      <div class="text-xl mt-6 pl-12">
         A square has a larger area than all other quadrilaterals with the same perimeter. The diagonals of a square
         bisect each other at 90 degrees and are perpendicular. Opposite sides of a square are parallel. The internal
         angles of a square add to 360 degrees.

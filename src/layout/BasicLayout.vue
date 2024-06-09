@@ -4,9 +4,7 @@
       <NavigationHeader />
     </nav>
     <div class="w-full h-full flex justify-center">
-      <body>
-        <slot></slot>
-      </body>
+      <slot></slot>
     </div>
   </div>
 </template>
