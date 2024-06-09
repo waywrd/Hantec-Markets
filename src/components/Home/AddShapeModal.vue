@@ -28,7 +28,6 @@
         class="bg-sky-500 hover:bg-sky-400 text-white py-2 px-4 rounded mt-8">
         Add shape
       </button>
-      <div class="text-xl my-4">or</div>
     </div>
   </div>
 </template>
