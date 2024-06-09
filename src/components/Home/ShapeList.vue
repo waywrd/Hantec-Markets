@@ -2,7 +2,7 @@
   <div class="flex justify-center mt-8">
     <div class="flex flex-wrap sm:justify-start justify-center w-11/12">
       <div
-        v-for="([key, value], index) in Object.entries(shapes)"
+        v-for="([key, value], index) in Object.entries(componentShapes)"
         :key="key">
         <ShapeCard
           :shape="value"
@@ -23,15 +23,19 @@
   </div>
 </template>
 <script setup>
-import { ref, onMounted } from "vue";
-import shapes from "../../utils/Shapes.js";
+import { ref } from "vue";
 import ShapeCard from "./ShapeCard.vue";
 import ShapeCreatorModal from "./ShapeCreator/ShapeCreatorModal.vue";
+import { useShapes } from "@/store/index.js";
+import { storeToRefs } from "pinia";
 
 const activeIndex = ref(false);
 const isCreateShapeModalOpen = ref(false);
+const { shapes } = storeToRefs(useShapes());
+const componentShapes = ref(shapes);
+// const { addShape } = useShapes();
 
-onMounted(() => {
-  // console.log(Object.entries(shapes));
-});
+// onMounted(() => {
+//   // console.log(Object.entries(shapes));
+// });
 </script>

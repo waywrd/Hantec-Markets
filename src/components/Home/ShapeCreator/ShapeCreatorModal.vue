@@ -24,6 +24,7 @@
               >
               <input
                 v-model="height"
+                max="300"
                 type="number"
                 id="height"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
@@ -36,7 +37,8 @@
               >
               <input
                 v-model="width"
-                type="numbers"
+                max="300"
+                type="number"
                 id="width"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
             </div>
@@ -61,6 +63,7 @@
               >
               <input
                 v-model="bottom"
+                max="300"
                 type="text"
                 id="bottom"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
@@ -73,6 +76,7 @@
               >
               <input
                 v-model="left"
+                max="300"
                 type="text"
                 id="left"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
@@ -85,6 +89,7 @@
               >
               <input
                 v-model="right"
+                max="300"
                 type="text"
                 id="right"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
@@ -110,7 +115,8 @@
               </label>
               <input
                 v-model="borderRadius"
-                type="text"
+                max="360"
+                type="number"
                 id="borderRadius"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
             </div>
