@@ -23,6 +23,8 @@ const routes = [
   },
 ];
 
+export { routes };
+
 const router = createRouter({
   history: createWebHistory(),
   routes,

@@ -17,7 +17,7 @@ import { ref, onMounted } from "vue";
 import shapes from "../utils/Shapes.js";
 import ShapeCard from "./ShapeCard.vue";
 
-const activeIndex = ref(0);
+const activeIndex = ref(false);
 
 onMounted(() => {
   console.log(Object.entries(shapes));
