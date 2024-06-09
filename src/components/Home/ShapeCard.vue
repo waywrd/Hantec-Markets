@@ -30,14 +30,4 @@ const shapeStyle = computed(() => {
   return Object.values(props.shape)[0];
 });
 </script>
-<style scoped>
-.card-title {
-  margin: 0;
-  font-size: 1.5em;
-  margin-bottom: 16px;
-}
-
-.card-content {
-  font-size: 1em;
-}
-</style>
+<style scoped></style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex bg-black-red-vertical justify-start gap-5 h-14 items-end">
+  <div class="flex bg-black-red-vertical justify-start sm:gap-5 gap-3 h-14 items-end">
     <RouterLink to="/">
       <div class="text-white font-light pl-3 sm:text-xl text-md">All shapes</div>
     </RouterLink>

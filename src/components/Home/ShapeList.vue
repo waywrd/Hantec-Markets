@@ -9,17 +9,29 @@
           :index="index"
           v-model="activeIndex" />
       </div>
+      <div
+        @click="isCreateShapeModalOpen = true"
+        class="rounded-lg shadow-md p-4 hover:shadow-lg bg-white w-56 m-5 h-48 cursor-pointer">
+        <div class="flex w-full h-full justify-center items-center">
+          <div>
+            <button class="bg-sky-500 hover:bg-sky-400 text-white py-2 px-4 rounded">Create form</button>
+          </div>
+        </div>
+      </div>
     </div>
+    <ShapeCreatorModal v-model="isCreateShapeModalOpen" />
   </div>
 </template>
 <script setup>
 import { ref, onMounted } from "vue";
 import shapes from "../../utils/Shapes.js";
 import ShapeCard from "./ShapeCard.vue";
+import ShapeCreatorModal from "./ShapeCreator/ShapeCreatorModal.vue";
 
 const activeIndex = ref(false);
+const isCreateShapeModalOpen = ref(false);
 
 onMounted(() => {
-  console.log(Object.entries(shapes));
+  // console.log(Object.entries(shapes));
 });
 </script>
