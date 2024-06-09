@@ -20,6 +20,9 @@ export const useShapes = defineStore("useShapes", () => {
     {
       Diamond: "width: 100px; height: 100px; background-color: indigo; transform: rotate(45deg);",
     },
+    {
+      Oval: "width:200px; height:100px; background-color:IndianRed; border-radius: 50%;  ",
+    },
   ]);
 
   const addShape = (shape) => {

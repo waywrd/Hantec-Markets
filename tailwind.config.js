@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "black-red-glow": "linear-gradient(to right, black 90%, red 100%)",
-        "black-red-vertical": "linear-gradient(to top, black 90%, red 100%)",
+        "black-red-vertical": "linear-gradient(to right, DarkSlateBlue 60%, red 100%)",
       },
     },
   },

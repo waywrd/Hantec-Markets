@@ -5,7 +5,7 @@
       'fixed left-250 top-50 bg-opacity-95 sm:w-2/4 sm:h-full w-6/8 h-full bg-white color-black rounded - lg shadow - 500 z - 50 border - 2',
     ]">
     <div class="flex justify-between p-2">
-      <div class="text-xl text-black mt-2">Create shape modal</div>
+      <div class="text-xl text-black mt-2">Create shape</div>
       <div
         @click="closeMdal"
         class="cursor-pointer text-xl relative top-2">
