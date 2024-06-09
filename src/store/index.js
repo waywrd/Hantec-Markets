@@ -12,7 +12,6 @@ export const useShapes = defineStore("useShapes", () => {
       Triangle:
         "width: 0; height: 0; border-left: 100px solid transparent; border-right: 100px solid transparent; border-bottom: 100px solid purple;",
     },
-    { Octagon: "width: 100px; height: 100px; background-color: purple; transform: rotate(45deg);" },
 
     {
       Heart:
