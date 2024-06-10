@@ -10,7 +10,7 @@
   }
 
   .bg-image-opacity-square::before {
-    @apply absolute inset-0 bg-cover bg-center opacity-10 z-0;
+    @apply absolute inset-0 bg-cover bg-center opacity-20 z-0;
     content: "";
     background-image: url("./assets/square-background.webp");
   }
