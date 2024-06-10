@@ -1,11 +1,13 @@
 <template>
-  <div class="flex flex-col w-full">
-    <div class="text-4xl mt-12 self-center">Triangle</div>
-    <div class="triangle-container self-center mt-8"></div>
-    <div class="sm:w-9/12 w-screen">
-      <div class="text-xl mt-6 pl-12">
-        Triangles are the simplest polygon, consisting of just three sides and three angles. Despite their simplicity,
-        they form the basis for much of geometry and are integral to many structures and designs.
+  <div class="relative overflow-hidden bg-image-opacity">
+    <div class="bg-cover bg-center flex flex-col w-full h-screen relative z-10">
+      <div class="text-4xl mt-12 self-center">Triangle</div>
+      <div class="triangle-container self-center mt-8"></div>
+      <div class="sm:w-4/12 w-screen">
+        <div class="text-xl mt-6 pl-12">
+          Triangles are the simplest polygon, consisting of just three sides and three angles. Despite their simplicity,
+          they form the basis for much of geometry and are integral to many structures and designs.
+        </div>
       </div>
     </div>
   </div>
