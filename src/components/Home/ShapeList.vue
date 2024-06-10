@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center mt-8">
-    <div class="flex flex-wrap justify-center w-11/12">
-      <div class="flex flex-wrap">
+    <div class="flex flex-wrap justify-center sm:w-11/12 w-full">
+      <div class="flex flex-wrap sm:justify-start justify-center">
         <div
           v-for="([key, value], index) in Object.entries(componentShapes)"
           :key="key">

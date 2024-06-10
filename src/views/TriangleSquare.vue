@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center mt-4">
+  <div class="flex flex-col h-full items-center mt-4 mb-12">
     <SquareView />
     <TriangleView />
   </div>
