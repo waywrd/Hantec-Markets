@@ -38,7 +38,7 @@ defineProps({ isCombined: Boolean, a: String });
   left: 0;
   width: 200%;
   height: 200%;
-  background: linear-gradient(280deg, #ff0000, #0000ff);
+  background: linear-gradient(360deg, #0000ff, #ff0000);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 </style>

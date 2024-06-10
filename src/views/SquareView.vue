@@ -17,7 +17,7 @@
 .square {
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, #0000ff 16%, #000000 80%);
+  background: linear-gradient(45deg, #774597, #96a5af);
   display: flex;
   align-items: center;
   justify-content: center;
