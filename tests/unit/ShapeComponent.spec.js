@@ -1,5 +1,5 @@
 import { mount } from "@vue/test-utils";
-import ShapeCard from "@/components/ShapeCard.vue";
+import ShapeCard from "@/components/Home/ShapeCard.vue";
 
 describe("Check if Shape Component renders and works correctly", () => {
   test("Check if shape title is rendered", () => {

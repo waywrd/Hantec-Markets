@@ -1,10 +1,10 @@
-import { defineStore, acceptHMRUpdate } from "pinia";
+import { defineStore } from "pinia";
 import { ref } from "vue";
 
 export const useShapes = defineStore("useShapes", () => {
-  if (import.meta.hot) {
-    import.meta.hot.accept(acceptHMRUpdate(useShapes, import.meta.hot));
-  }
+  // if (import.meta.hot) {
+  //   import.meta.hot.accept(acceptHMRUpdate(useShapes, import.meta.hot));
+  // }
   const shapes = ref([
     { Circle: "width: 100px; height: 100px; background-color: #375DD8; border-radius: 50%;" },
     { Square: "width: 100px; height: 100px; background-color: #6E4B9D;" },
