@@ -12,7 +12,7 @@
         X
       </div>
     </div>
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center mt-6">
       <select
         class="block w-3/4 px-4 py-2 pr-8 bg-white border border-sky-300 rounded-md shadow-sm focus:border-sky-300 sm:text-sm"
         v-model="selectedValue">
