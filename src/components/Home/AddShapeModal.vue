@@ -32,21 +32,29 @@
   </div>
 </template>
 <script setup>
-import { defineModel, defineProps, defineEmits, ref } from "vue";
+import { defineModel, defineProps, defineEmits, ref, watch } from "vue";
 
 const isAddShapeModalOpen = defineModel();
 
 const props = defineProps({
   availableShapes: Array,
+  selectedShape: String,
 });
 
 const emit = defineEmits(["addShape"]);
 
-const selectedValue = ref(props.availableShapes[0]);
+const selectedValue = ref(props.selectedShape ? props.selectedShape : props.availableShapes[0]);
 
 const addShape = () => {
   emit("addShape", selectedValue.value);
 };
+
+watch(
+  () => props.selectedShape,
+  () => {
+    selectedValue.value = props.selectedShape;
+  }
+);
 
 const closeModal = () => {
   isAddShapeModalOpen.value = false;

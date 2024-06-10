@@ -1,6 +1,6 @@
 <template>
   <div
-    @click="activeIndex = index"
+    @click="cardClick"
     :class="[
       index === activeIndex ? 'border-sky-300 border-2 shadow-none' : 'border-transparent border-2',
       'rounded-lg shadow-md p-4 hover:shadow-lg   bg-white w-56 m-5 h-48 cursor-pointer transition-all duration-200 ease-in-out',
@@ -13,7 +13,9 @@
 </template>
 
 <script setup>
-import { computed, defineProps, defineModel } from "vue";
+import { computed, defineProps, defineModel, defineEmits } from "vue";
+const emit = defineEmits(["cardClicked"]);
+
 const props = defineProps({
   shape: Object,
   index: Number,
@@ -29,5 +31,10 @@ const shapeTitle = computed(() => {
 const shapeStyle = computed(() => {
   return Object.values(props.shape)[0];
 });
+
+const cardClick = () => {
+  activeIndex.value = props.index;
+  emit("cardClicked", shapeTitle.value);
+};
 </script>
 <style scoped></style>

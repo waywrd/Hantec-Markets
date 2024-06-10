@@ -6,6 +6,7 @@
           v-for="([key, value], index) in Object.entries(componentShapes)"
           :key="key">
           <ShapeCard
+            @cardClicked="setSelectShape"
             :shape="value"
             :index="index"
             v-model="activeIndex" />
@@ -26,7 +27,8 @@
           <AddShapeModal
             @addShape="addNewShape"
             v-model="isAddShapeModalOpen"
-            :availableShapes="shapeNames" />
+            :availableShapes="shapeNames"
+            :selectedShape="selectedShape" />
         </div>
       </div>
 
@@ -56,6 +58,7 @@ const activeIndex = ref(false);
 const isAddShapeModalOpen = ref(false);
 const { shapes } = storeToRefs(useShapes());
 const componentShapes = ref([]);
+const selectedShape = ref();
 
 onMounted(() => {
   if (shapes.value.length) {
@@ -72,5 +75,9 @@ const addNewShape = (shapeName) => {
   const shape = { [shapeName]: value };
   componentShapes.value.push(shape);
   isAddShapeModalOpen.value = false;
+};
+
+const setSelectShape = (shapeName) => {
+  selectedShape.value = shapeName;
 };
 </script>
