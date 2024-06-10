@@ -1,10 +1,10 @@
 <template>
-  <div class="flex flex-col h-full items-center mt-4 mb-12">
-    <SquareView />
-    <TriangleView />
+  <div class="flex flex-col h-full items-center mb-12">
+    <div><SquareView /></div>
+    <div class="mt-12"><TriangleView :isCombined="true" /></div>
   </div>
 </template>
 <script setup>
-import SquareView from "./TriangleView";
-import TriangleView from "./SquareView.vue";
+import TriangleView from "./TriangleView";
+import SquareView from "./SquareView.vue";
 </script>
